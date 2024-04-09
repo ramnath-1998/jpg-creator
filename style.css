@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Thin.ttf') format('ttf');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 1080px;
+    width: 1080px;
+    border-style:solid;
+
+}
+
+.content-heading{
+    color: #464646;
+    font-family: "Roboto",sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 25px;
+}
