@@ -168,7 +168,6 @@ def main():
         image_bytes = image.getvalue()
         image_identifier = save_bytes_as_image(image_bytes)
         if st.button("Create Image", on_click=handle_create_image(post_type, content,heading, image_identifier)):
-            print(image_identifier)
             with st.spinner("Creating image..."):    
                 with open(f"./{image_identifier}-o.jpg", "rb") as file:
                     st.download_button(
@@ -178,7 +177,6 @@ def main():
                         mime="image/jpg"
                     )
                 st.success("Done")
-    
     delete_file(f"./{image_identifier}-o.jpg")
     st.empty()
 
